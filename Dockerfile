@@ -17,7 +17,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Step 7: Copy the JAR file from the build container
-COPY --from=build /app/target/gallery-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar app.jar
 
 # Step 8: Expose the port (default 8080)
 EXPOSE 8989
